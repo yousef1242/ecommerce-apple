@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --tw-gradient-to: #8b5cf6;
+    --tw-gradient-from: #ec4899;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.frontPage .col-12 h1 .spanText{
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    color: transparent;
+    -webkit-background-clip: text;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.frontPage .col-12 h1{
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.frontPage .container .row a button{
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    color: #fff;
+    border: 0px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 19px;
 }
+.products .button .yes{
+    background-color: #77777777!important;
+    position: relative;
+}
+.products .button button{
+    margin-right: 15px;
+    padding: 10px 15px;
+    border: 0px;
+    background: none;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+.products .button{
+    margin-bottom: 60px;
+    position: relative;
+}
+.products .button .yes::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    left: 0;
+    bottom: 0;
+}
+.products .container .card{
+    background-color: rgb(53 56 60);
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+.products .container .cols{
+    margin-bottom: 20px;
+}
+.products .container .card img{
+    height: 180px;
+    width: 180px;
+}
+.products .container .card .divImage{
+    width: 100%;
+    text-align: center;
+}
+.products .container .card h1 button{
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    color: #fff;
+    border: 0px;
+    padding: 14px 15px 13px 13px;
+    border-radius: 100px;
+    font-size: 25px;
+}
+.emptybutton{
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    padding: 10px 15px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 3px;
+}
+.remove{
+    background: none;
+    border: 0px;
+    font-size: 20px;
+    color: rgb(59 130 246);
+}
+.fixedButton{
+    position: fixed;
+    bottom: 28px;
+    right: 30px;
+    background-color: rgb(209 213 219);
+    padding: 14px 15px;
+    border-radius: 100px;
+    border: 0px;
+}
+.fixedButton h6{
+    position: absolute;
+    padding: 2px 8px 5px 8px;
+    border-radius: 100px;
+    right: -6px;
+    top: -5px;
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    color: #fff;
+}
+.navbar .nav-link h6{
+    position: absolute;
+    padding: 2px 8px 5px 8px;
+    border-radius: 100px;
+    right: -16px;
+    top: -7px;
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    color: #fff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.boldFont{
+    font-weight:bold;
+    font-size: 25px;
+}
+.navbar .nav-link{
+    position: relative;
+}
+@media (max-width:577px) {
+    .css-1h0ybxz{
+        margin-bottom: 15px;
+    }
 }
